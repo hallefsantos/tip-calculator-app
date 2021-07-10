@@ -1,4 +1,4 @@
-const RadioButton = ({ name, item, itemCompare, setItemCompare }) => {
+const RadioButton = ({ name, item, itemCompare, setItemCompare, setCustomItem }) => {
   return (
     <div>
       <input 
@@ -7,7 +7,7 @@ const RadioButton = ({ name, item, itemCompare, setItemCompare }) => {
         id={item} 
         name={name} 
         value={item} 
-        onChange={() => setItemCompare(item)}
+        onChange={() => {setItemCompare(item); setCustomItem('')}}
       />
       <label 
         className={`block w-full py-2 text-center font-bold rounded cursor-pointer transition-colors hover:bg-primary hover:text-neutral-veryDark ${item === itemCompare ? 'bg-primary text-neutral-veryDark' : 'text-white bg-neutral-veryDark'}`} 

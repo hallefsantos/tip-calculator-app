@@ -63,7 +63,8 @@ function App() {
                       name="tip" 
                       item={tipItem} 
                       itemCompare={tip}
-                      setItemCompare={setTip} 
+                      setItemCompare={setTip}
+                      setCustomItem={setCustomTip}
                     />
                   ))}
                   <div>
