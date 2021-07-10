@@ -110,7 +110,7 @@ function App() {
 
                 <div className="flex justify-between items-center mt-10">
                   <div className="flex flex-col font-bold">
-                    <span className="text-base">Tip</span>
+                    <span className="text-base">Total</span>
                     <span className="text-xs font-bold text-neutral-dark-02">/ person</span>
                   </div>
                   <NumberFormat 
