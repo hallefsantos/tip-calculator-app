@@ -38,7 +38,7 @@ function App() {
         <img src="/img/logo.svg" alt="Splitter Logo" />
       </div>
 
-      <div className="w-full max-w-4xl mt-10 md:mt-20 p-8 md:p-10 bg-white rounded-t-3xl md:rounded-3xl shadow-md">
+      <div className="w-full max-w-4xl mt-10 md:mt-20 p-8 md:p-10 bg-white rounded-t-3xl md:rounded-3xl md:shadow-md">
         <form>
           <div className="grid md:grid-cols-2 gap-x-10 text-xl">
             {/* Coluna 1 */}
