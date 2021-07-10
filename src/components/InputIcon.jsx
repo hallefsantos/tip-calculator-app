@@ -14,7 +14,7 @@ const InputIcon = ({ placeholder, label, id, value, setValue, icon }) => {
         <input 
           id={id} 
           className={`w-full py-2 md:py-3 px-3 md:px-4 text-right bg-neutral-light-02 rounded-md focus:outline-none border-2 ${value === 0 ? 'border-red-500 focus:border-red-500' : 'border-transparent focus:border-neutral-veryDark'}`}
-          type="text" 
+          type="number" 
           placeholder={placeholder}
           onChange={(e) => setValue(+e.target.value)}
           value={value}
