@@ -15,7 +15,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "serve": "serve -s build"
   },
   "eslintConfig": {
     "extends": [
@@ -37,7 +38,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^9",
-    "postcss": "8.3.5",
+    "postcss": "^7",
+    "react-number-format": "^4.6.4",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }

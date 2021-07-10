@@ -27,8 +27,3 @@ The designs were created to the following widths:
 ### Body Copy
 
 - Font size (form inputs): 24px
-
-### Font
-
-- Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
-- Weights: 400, 500, 700
