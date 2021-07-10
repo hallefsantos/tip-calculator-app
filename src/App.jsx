@@ -15,14 +15,12 @@ function App() {
 
   
   useEffect(() => {
-    if (bill && numberOfPeople && (tip || customTip) ) calcTip()
+    if (bill && numberOfPeople && (tip || customTip) ) {
+      const result = (bill * ((tip ?? customTip) / 100)) / numberOfPeople
+      setTipByPerson(result)
+      setTotalByPerson((bill / numberOfPeople) + result)
+    }
   }, [bill, tip, numberOfPeople, customTip])
-  
-  const calcTip = () => {
-    const result = (bill * ((tip ?? customTip) / 100)) / numberOfPeople
-    setTipByPerson(result)
-    setTotalByPerson((bill / numberOfPeople) + result)
-  }
 
   const resetForm = () => {
     setTipByPerson(0)
